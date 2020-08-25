@@ -1,0 +1,19 @@
+server:
+  port: 18888
+  address: 0.0.0.0
+
+spring:
+    datasource:
+        driver-class-name:  com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://rm-wz9709by824at6170.mysql.rds.aliyuncs.com:3306/qiv_celi?rewriteBatchedStatements=true&useUnicode=true&characterEncoding=utf-8&characterSetResults=UTF-8&autoReconnect=true&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2B8
+        username: root
+        password: LC36uDq3FetKtfDv
+        #url: jdbc:mysql://192.168.1.201:30006/qiv_celi?rewriteBatchedStatements=true&useUnicode=true&characterEncoding=utf-8&characterSetResults=UTF-8&autoReconnect=true&allowMultiQueries=true&useSSL=false
+        #username: qivay_mysql_dev
+        #password: uIzyZms7BG
+    application:
+      name: standby-service
+    main.allow-bean-definition-overriding: true
+mybatis:
+  type-aliases-package: com.qivay.entity
+  mapper-locations: classpath*:mapping/*.xml
